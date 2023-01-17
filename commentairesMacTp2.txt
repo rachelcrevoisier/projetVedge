@@ -1,0 +1,13 @@
+- Communication graphique : ne changez pas l'interlettrage de vos polices de caractères.
+
+- Communication graphique : dégagement insuffisant.
+p. ex. votre section « franchise » en bas de page.
+
+- Expérience utilisateur : manque de contenu, de fonctionnalités, d'information ou de contexte.
+p. ex. sur mobile, il faudrait que les noms de villes soient déjà affichés pour pas avoir à cliquer sur les images pour le lire. Ç'aurait été bien aussi de retrouver des phrases manquantes, présentes dans la scénarisation.
+
+- Méthode (CSS) : Spécificité trop élevée pour le sélecteur
+`assets/css/style-gallery.css:110:1` voir `.gallery_image img:hover:not(.gallery_image_fix img)`
+
+- Méthode (CSS) : vous répétez trop de règles. Créez une classe commune dans ce cas.
+p. ex. `.footer` et `.gallery_texte` partagent 5 règles.

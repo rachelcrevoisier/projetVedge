@@ -1,0 +1,68 @@
+/* TOUS LES IMPORT DES AUTRES PAGES CSS */
+
+@import "style-cartes.css";
+@import "style-hero.css";
+@import "style-footer.css";
+@import "style-marquise.css";
+@import "style-font.css";
+@import "style-gallery.css";
+@import "style-navbar.css";
+@import "style-media.css";
+
+/* ENLEVE LE MARGIN ET LE PADDING DE LA PAGE HTML PAR DEFAUT */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* MET LE PADDING A DROITE ET A GAUCHE DU MAIN A 50PX */
+main {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* TOUS LES ENFANTS DU MAIN ONT DROIT D'AVOIR 50PX DE MARGE EN BAS ET EN HAUT */
+main>* {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+video {
+    border-radius: 25px;
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+body {
+    background-color: rgb(239, 237, 232);
+}
+
+article>img {
+    max-height: 72vh;
+}
+
+/* LE TEXTE EST CENTRÉ SUR BEAUCOUP D'ÉLÉMENT EN UTILISANT TRANSFORM : TRANSLATE(-50%, -50%) ET POSITION TOP LEFT 50%*/
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* LE STYLE DES HORIZONTAL RULES (LES POINTS QUI DIVISE CHACUNE DE MES SECTIONS) */
+hr {
+    margin: auto;
+    border-style: none;
+    border-top-style: dotted;
+    border-color: #F45D01;
+    height: 0px;
+    border-width: 25px;
+    width: 12%;
+}
+
+@media screen and (max-width:1020px) {
+    hr {
+        width: 20%;
+    }
+
+}

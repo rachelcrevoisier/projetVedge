@@ -1,0 +1,67 @@
+Tp2 
+Maryline Carrier 
+Rachel Crevoisier
+
+
+Ce que nous avons fait : 
+
+    - ajouter 2 divs à la galerie d'images afin que ce soit plus esthétique.
+    - ajout de la section 'cuisine artisanale'.
+    - changement de la taille de la police dans le sous-menu afin qu'on puisse facilement le différencier du sous-menu.
+    - mise en place des medias query afin que ce soit parfaitement responsive particulièrement à 320px.
+    - modification du footer: Initialement, il était en flex 4 colonnes et le copyright était l'unique information sur la 4ieme colonne ce qui donnait beaucoup d'espace vide, nous avons retirer cette dernière de façon à donner plus d'espace aux 3 autres colonnes et rendre l'informations beaucoup plus visible. Nous avons aussi ajouté les logos de réseaux sociaux et le copyright complètement à droite sous nos adresses.
+    - Nous avons retiré les 'border radius' des derniers élements du 'navbar_dernier_dropdown'.
+
+    Nous avons choisi de respecter le plus possible le prototype de départ, le code étant clair et déjà bien organisé.
+
+Travail réalisé par Maryline : 
+
+    - recherche de couleurs, d'images et du vidéo.
+    - implémentation de ceux-ci dans le html-css
+    - je me suis aussi assuré de suivre le prototype en incluant les over et les voiles noir derrière le texte sur image. 
+
+Travail réalisé par Rachel : 
+
+    - ajout de la section et des images
+    - medias query 
+    - mise en place du footer 
+
+Argumentaire précédent : 
+Responsiveness et allure général
+
+Mon site est responsive alors il est possible de réduire la taille de l’écran et les «Grids> et composantes Flex vont s’adapter. Ce n’est pas parfait mais je voulais me pratiquer à faire la base de la « Responsiveness» d’un site. Sinon, j’ai gardé le site assez simple et minimaliste pour éviter de saturer l’utilisateur d’informations. L’usager qui visite la page de Vedge veut un site moderne et épuré. Il veut aussi une bonne lisibilité pour les éléments de la page et un alignement adéquat des éléments mis en page. J’utilise alors 50px de padding partout sur la page et 25 de border radius pour arrondir les coins. Pour diviser chaque sections de page j'ai utiliser des HR en points pour des fins esthétiques. 
+
+Police de caractère
+
+Le site du restaurant Vedge devait bien représenter ses produits et sa mentalité. Pour un restaurant végan qui utilise des produits simples, non transformés et en général bon pour la santé, le site se devait d’être simple, épuré et moderne. C’est une des raisons pour laquelle j’ai choisi d’utiliser la police DM Sans, une police de google font sans sérif. Les polices sans sérif sont plus simples et l’empattement n’est pas très tendancieux. 
+Pour l’échelle typographique j’ai décider d’en prendre une sur internet. Le lien va se retrouver en annexe de ce document. Je n’utilise pas toutes les entités (h4, h5, small) dans le site mais je laisse ceux-ci présent dans le CSS pour permettre de les utilisés plus tard si jamais je décide de faire des modifications ou des ajouts. Le choix de l’échelle typographique s’est fait en faisant de l’essai erreur. Mon site opte pour la lisibilité et je voulais m’assurer que celle-ci était respecté avec l’échelle typographique. Le p est de 1em, le H1 est de 2em et le H2 est de 1.7em. Ce sont les principales entités utilisées. Pour le héro de page et le Navbar, la typographie est «Responsive» pour permettre la bonne lisibilité peu importe la grosseur de l’écran.
+
+Barre de navigation
+
+La barre de navigation est très simple. Le logo est à gauche et est en blanc car l’image de la marque est importante et doit ressortir. Le sous menu «À propos» est directement à coté du logo car pour le restaurant la philosophie et les informations sur les franchises est primordiale. Étant un restaurant végan, il est important pour l’utilisateur d’avoir les informations sur la philosophie de celui-ci. Ensuite, il y a une marge qui permet de diviser cette section avec le reste de la barre de navigation. J’ai choisi de ne pas accorder plus d’importance au bouton commandez (il est de même grosseur et de même couleur) pour la simple raison que selon le type de restaurant leur but n’est pas absolument de vendre à tout prix mais de transférer leurs valeurs et changer les mentalités à propos du véganisme.
+
+Héro de page (Ajout de scénarisation)
+
+Le héro de page sert à accueillir l’utilisateur du site web. Il est constitué d’un gif, du logo du restaurant et d’un slogan. Le héro de page se met automatiquement à environ 77vh de la page permettant de voir sur la plupart des écrans correctement, le héro et le padding. (Sans y voir les points de division de section). J’ai choisi d’y mettre un gif pour montrer ce que le site ressemblera lorsqu’il y aura un video pour remplacer justement ce gif. Comme on veut bien accueillir l’utilisateur, le site web aura un vidéo de nourriture dans le héro de page. Le slogan et le logo ont tous les deux des grosseurs responsives, soit de 8vw et de 2vw. 
+
+Grid marketing
+
+Après le héro de page nous avons deux images avec «Botanique et décadente» et «Deux mimosas pour 15$». Le texte sur ces images est centré et est en H1 (haute importance).  Ces deux images sont en Grid et vont toujours respectés le padding de 50px. Lorsque l’écran diminue, les images vont se mettre à la verticale.   J’ai choisi de le mettre après le héro de page car après le vidéo démontrant la qualité de la nourriture il est intéressant d’avoir un peu de marketing et de promotions de produits. L’utilisateur a déjà envi de sortir son portefeuille et de commander. 
+
+Carte Restaurant près de chez vous
+
+Ensuite, une carte permet à l’utilisateur d’entrer son adresse et de trouver un restaurant près de chez lui. Cette carte prend la largeur complète de la page pour éviter un effet ceinture sur la page web. Le bouton OK à été fusionner avec l’invite de commande simplement à des fins esthétiques. 
+Grid restaurants
+La grid avec les différents restaurants est particulier. De base, les images devront être nettes et ne pas avoir de texte. Ensuite, lorsque l’utilisateur va hover par-dessus les images l’image va devenir flou et le texte va apparaitre. Pour l’instant, le comportement du site est simplement un hover avec le texte qui apparait. Comme l’image est complètement grise je n’ai pas mis de flou encore. Le gap est pareil que le padding (50px). 
+
+Carte Propre restaurant
+
+Cette carte permet à l’utilisateur de clicker sur un lien. Les paramètres du bouton lui donnent un aspect simple et un peu moins important.
+
+Footer
+
+Le footer est assez simple il est diviser en 5 mais il y a une section qui est vide (utiliser pour faire de l'espace entre les sections). Les trois sections de gauche ont un padding a droite et en bas pour éviter que le texte se colle trop en format plus petit d’écran. Le padding suit le padding de la page donc 50px de padding. Le texte est aligner à gauche pour les trois premieres sections ou à droite pour la section copyrights. En petit écran le flex se met en flex-flow column. J'ai choisis localisation, heures et menu secondaire pour le footer car ce sont des informations importantes a avoir apres que l'utilisateur passe tout le site.
+
+Annexe
+
+https://spencermortensen.com/articles/typographic-scale/

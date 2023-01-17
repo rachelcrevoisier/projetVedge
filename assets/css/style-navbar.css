@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+.navbar_menu {
+    max-width: auto;
+}
+
+/* BACKGROUND COLOR DE LA NAVBAR */
+.navbar_couleur-bgn {
+    background-color: rgb(79, 101, 81);
+}
+
+/* PERMET DE METTRE UN ESPACE ENTRE À PROPOS ET ACCUEIL (PREND L'ESPACE RESTANT) */
+.navbar_division {
+    margin-left: auto;
+}
+
+/* PERMET DE CENTRER LE LOGO AU MILIEU VERTICALEMENT */
+.navbar_text_centrer {
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 90px;
+}
+
+/* MET LA NAVBAR EN FLEX ET ENLEVE LE LIST STYLE DES UL */
+.navbar_menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* MET LES ENFANTS DES ANCHOR TAGS COMME FLEX ET ALIGNE LES ELEMENT AU CENTRE //SPACE-AROUND AVEC 20PX DE PADDING , ENLEVE LES DECORATIONS DE TEXTE DES ANCHOR TAGS ET MET TOUT EN UPPERCASE */
+.navbar_menu a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+/* MET LA LISTE EN POSITION RELATIVE ET AJUSTE LE WIDTH A AUTO POUR PERMETTRE AUX DROPDOWN MENU DE NE PAS PRENDRE LA LARGEUR AU COMPLET DE LA PAGE. SI ON ENLEVE CES SETTINGS LA LES DROPDOWN PRENDRAIENT LA PAGE AU COMPLET */
+.navbar_menu li {
+    position: relative;
+    width: auto;
+}
+
+/* PERMET A LA DROPDOWN DE FONCTIONNER. SINON TOUT RESTE COLLÉ EN HAUT DE LA PAGE */
+.navbar_menu li:hover .navbar_drop_down>li {
+    display: block;
+}
+
+/* PERMET DE FAIRE FONCTIONNER LE CHANGEMENT DE COULEUR DE BKGROUND DE LA NAVBAR LORSQUE L'UTILISATEUR HOVER */
+.navbar_menu a:hover {
+    background-color: #98aca4;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+/* LE Z INDEX PERMET AU DROPDOWN D'ETRE PAR DESSUS LES ELEMENT. POSITION ABSOLUTE PERMET DE NE PAS PRENDRE TOUTE LA PLACE POUR LE DROPDOWN , DISPLAY FLEFX ET FLEX-FLOW COLUMN SONT NECESSAIRE POUR AVOIR LE DROPDOWN VERTICALEMENT AUTREMENT LES VALEURS SERAIENT UNE A COTÉ DES AUTRES. WIDTH 100% PERMET D'ALIGNÉ LES BOITES EXACTEMENT A LA MEME LARGEUR */
+.navbar_drop_down {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.navbar_drop_down a {
+    font-size: 15px;
+}
+
+/* PERMET DE CACHÉ LES ELEMENTS DE LA DROPDOWN BAR LORSQU'ON NE HOVER PAS */
+.navbar_drop_down li {
+    display: none;
+    position: relative;
+}
+
+/* FAIT APPARAITRE LES ELEMENTS CACHÉS LORSQUE L'UTILISATEUR HOVER */
+.navbar_drop_down li:hover {
+    display: block;
+}
+
+/* CHANGE LE FOND DE LA DROPDOWN */
+.navbar_drop_down a {
+    background-color: rgb(79, 101, 81, 0.8145);
+}
+
+/* RESPONSIVENESS DE LA NAVBAR A 720PX */
+@media screen and (max-width: 720px) {
+
+    /* ENLEVE LE MARGIN-LEFT A GAUCHE DE À PROPOS */
+    .navbar_division {
+        margin-left: 0;
+    }
+
+    /* CACHE LE LOGO QUI ÉTAIT AUPARAVENT A GAUCHE */
+    .navbar_logo {
+        display: none;
+    }
+
+    /* MET TOUS LES ELEMENTS EN FLEX-FLOW COLUMN DONC TOUS LES ELEMENTS SE METTENT UN A UN VERTICALEMENT */
+    .navbar_menu ul {
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        left: 0px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* AJOUTE UN BORDER A LA NAVBAR LORSQUELLE EST EN 720PX */
+    .navbar_menu li {
+        border-bottom: 1px solid grey;
+    }
+
+    /* S'ASSURE QU'IL N'Y A PAS DE PADDING */
+    .navbar_menu a {
+        padding: 0;
+    }
+
+    /* MET LE FONT SIZE A 1.5REM EN 720PX */
+    nav a {
+        font-size: 1.5rem;
+    }
+
+    nav div {
+        font-size: 1.5rem;
+    }
+}

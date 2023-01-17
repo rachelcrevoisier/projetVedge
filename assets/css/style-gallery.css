@@ -1,0 +1,182 @@
+/* LE CONTENEUR DU TEXTE EST EN FLEX ET CENTRE LES ELEMENTS */
+
+.gallery_texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+/* LE HERO DE PAGE PREND 70VH */
+.gallery_texte_hero {
+    min-height: 70vh;
+}
+
+/* LES PROMOTIONS (DEUX MIMOSAS 5$ + DÉCADENTE ...) PRENNENT 700PX*/
+.gallery_texte_promotions {
+    min-height: 500px;
+}
+
+.gallery_texte_emphase {
+    background-color: rgb(0, 0, 0, 0.5);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+/* LES VILLES PRENNENT AU MINIMUM 350PX */
+.gallery_texte_villes {
+    min-height: 350px;
+}
+
+/* POSITION RELATIVE AUX ELEMENTS FLEX TEXTE */
+.gallery_texte>* {
+    position: relative;
+}
+
+/* SETTINGS POUR LES IMAGES DANS LE FLEX */
+.gallery_texte>img {
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    /* opacity: 100%; */
+}
+
+/* LES IMAGES PRENNENT 100% DU CONTENEUR ET ONT UNE TRANSITION SUR LE BKGROUND COLOR */
+.gallery_image img {
+    max-width: 100%;
+    width: 100%;
+    transition: 2s;
+    /* background-color: lightgrey;*/
+    max-height: ft;
+}
+
+/* CREATION DU GRID AVEC 350PX PAR CONTENEUR */
+.gallery_image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 50px;
+}
+
+/* SETTINGS POUR LES IMAGES DANS LE GRID */
+.gallery_image article img {
+    object-fit: cover;
+    max-width: 100%;
+    /* height: auto; */
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+/* LES ENFANTS DE GALLERY D'IMAGE DOIVENT AVOIR LA POSITION RELATIVE (LE TEXTE) ET LA CLASS GALLERY_TEXTE QUI EST UTILISÉ À PLUSIEURS PLACE*/
+.gallery_image>* {
+    position: relative;
+    text-align: center;
+}
+
+/* TRANSITION SUR L'OPACITÉ EN EASE-OUT POUR LORSQUE L'UTILISATEUR ARRETE DE HOVER */
+.gallery_transition {
+    text-transform: uppercase;
+    transition: 2s ease-out;
+    transition-property: opacity;
+    opacity: 0;
+}
+
+/* TRANSITION SUR L'OPACITÉ LORSQUE L'UTILISATEUR HOVER SUR LES ARTICLES /// C'EST LE BACKGROUND DE L'IMAGE QUI CHANGE*/
+.gallery_image>article:hover img {
+    transition-timing-function: ease-in;
+    transition-property: background-color;
+    background-color: rgb(0, 0, 0, 0.25);
+}
+
+
+.gallery_image>article:hover .gallery_transition {
+    transition-timing-function: ease-in;
+    transition-property: background-color;
+    opacity: 1;
+    color: white;
+}
+
+.gallery_image img {
+    transition: filter 0.5s;
+}
+
+.gallery_image img:hover:not(.gallery_image_fix img) {
+    filter: blur(3px) brightness(.8);
+}
+
+@media screen and (max-width:450px) {
+
+    .gallery_texte_hero {
+        min-height: 20vh;
+    }
+
+    .gallery_texte_promotions {
+        max-height: 100px;
+    }
+
+    .gallery_texte {
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+    .gallery_image {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 50px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .gallery_texte_promotions {
+        min-height: 500px;
+        width: 100%;
+    }
+
+    .gallery_texte {
+        padding: 3px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width:1020px) {
+
+    .gallery_texte_hero {
+        min-height: 20vh;
+    }
+
+    .gallery_texte_promotions {
+        max-height: 100px;
+    }
+
+    .gallery_texte {
+
+        padding: 5px;
+
+        border-radius: 15px;
+    }
+
+
+}
+
+@media screen and (max-width:320px) {
+
+    .gallery_texte h1 {
+        font-size: 1.2411em;
+    }
+
+    .gallery_texte_emphase {
+
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+}

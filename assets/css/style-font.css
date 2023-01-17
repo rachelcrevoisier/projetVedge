@@ -1,0 +1,87 @@
+/* ---------------------LIEN VERS L'ÉCHELLE TYPOGRAPHIQUE---------------------*/
+/* https://spencermortensen.com/articles/typographic-scale/ */
+html {
+    font-size: 100%;
+}
+
+* {
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+nav a {
+    font-size: 1.245vw;
+    color: rgb(244, 213, 181);
+}
+
+.font_texte_logo {
+    font-size: 3vw;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 1.7411em;
+    line-height: 1.1;
+}
+
+h3 {
+    font-size: 1.5157em;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: 1.3195em;
+    line-height: 1.1;
+    padding-top: 20px;
+    color: black;
+}
+
+h5 {
+    font-size: 1.1487em;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 1em;
+}
+
+small {
+    font-size: .8706em;
+}
+
+/* GROSSEUR CUSTOM ET RESPONSIVE POUR LE LOGO*/
+.font_hero_gros_texte {
+    font-size: 8vw;
+}
+
+/* GROSSEUR CUSTOM ET RESPONSIVE POUR LE SLOGAN*/
+.font_hero_moyen_texte {
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 700px) {
+
+    div>h2 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    div>h4 {
+        font-size: 0.8em;
+    }
+
+}

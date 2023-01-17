@@ -1,0 +1,85 @@
+/* BOUTON CONTACTEZ NOUS */
+.carte_bouton {
+    display: inline-block;
+    background-color: rgb(79, 101, 81);
+    margin-top: 25px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.carte_bouton a {
+    padding: 8px 12px;
+}
+
+/* DEMI BOUTON FUSIONNER AVEC INPUT RESTAURANT PRES DE CHEZ VOUS */
+
+input+.carte_bouton {
+    padding-top: 5px;
+    padding-bottom: 2px;
+    padding-left: 15px;
+    padding-right: 20px;
+    /*HEIGHT DE 2EM POUR ETRE EQUIVALENT AU HEIGHT DU INPUT*/
+    height: 2em;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-style: none;
+}
+
+/* PARAMÈTRES DES CARTES */
+.carte {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 101, 81, 0.5145);
+    border-radius: 25px;
+}
+
+/* PADDING TOP ET BOTTOM DES ENFANTS DES CARTES */
+.carte>* {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* PARAMETRES DU INPUT DE TEXTE POUR RESTAURANT PRES DE CHEZ VOUS*/
+.carte input {
+    display: inline-block;
+    /*HEIGHT DE 2EM POUR ETRE EQUIVALENT AU HEIGHT DU INPUT*/
+    height: 2em;
+    padding: 6px 8px;
+    width: 25%;
+    margin-top: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-style: none;
+}
+
+.carte h2 {
+    color: black;
+
+}
+
+@media screen and (max-width:320px) {
+
+    .carte input {
+        max-width: 45%;
+    }
+
+    .carte h2 {
+        font-size: 1.2411em;
+    }
+
+    .carte h4 {
+        font-size: 0.8195em;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    .carte input {
+        width: 65%;
+    }
+
+}
