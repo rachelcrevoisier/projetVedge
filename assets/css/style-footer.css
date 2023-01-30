@@ -77,6 +77,13 @@ footer h2 {
     padding: 10px;
     width:150px;
     text-align: center;
+    color:black
+}
+.footer_bouton:hover {
+    
+    
+    
+    color:white
 }
 
 @media screen and (max-width: 420px) {

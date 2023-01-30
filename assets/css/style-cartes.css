@@ -35,7 +35,9 @@ input+.carte_bouton {
     background-color: rgb(79, 101, 81, 0.5145);
     border-radius: 25px;
 }
-
+.carte_bouton:hover{
+    color:black;
+}
 /* PADDING TOP ET BOTTOM DES ENFANTS DES CARTES */
 .carte>* {
    padding:25px;
