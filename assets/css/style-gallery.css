@@ -39,7 +39,7 @@
 }
 
 /* SETTINGS POUR LES IMAGES DANS LE FLEX */
-.gallery_texte>img {
+.gallery_texte>img{
     position: absolute;
     inset: 0;
     object-fit: cover;
@@ -62,7 +62,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 50px;
+    
 }
+
 
 /* SETTINGS POUR LES IMAGES DANS LE GRID */
 .gallery_image article img {
@@ -79,13 +81,6 @@
     text-align: center;
 }
 
-/* TRANSITION SUR L'OPACITÉ EN EASE-OUT POUR LORSQUE L'UTILISATEUR ARRETE DE HOVER */
-.gallery_transition {
-    text-transform: uppercase;
-    transition: 2s ease-out;
-    transition-property: opacity;
-    opacity: 0;
-}
 
 /* TRANSITION SUR L'OPACITÉ LORSQUE L'UTILISATEUR HOVER SUR LES ARTICLES /// C'EST LE BACKGROUND DE L'IMAGE QUI CHANGE*/
 .gallery_image>article:hover img {
@@ -95,12 +90,7 @@
 }
 
 
-.gallery_image>article:hover .gallery_transition {
-    transition-timing-function: ease-in;
-    transition-property: background-color;
-    opacity: 1;
-    color: white;
-}
+
 
 .gallery_image img {
     transition: filter 0.5s;
@@ -109,6 +99,10 @@
 .gallery_image img:hover:not(.gallery_image_fix img) {
     filter: blur(3px) brightness(.8);
 }
+
+
+
+
 
 @media screen and (max-width:450px) {
 
@@ -144,27 +138,31 @@
         padding: 3px;
         border-radius: 10px;
     }
+    .gallery_texte_emphase h5{
+        font-size:14px;
+        font-style: normal;
+    }
+} 
 
+@media screen and (min-width:920px) {
+/* TRANSITION SUR L'OPACITÉ EN EASE-OUT POUR LORSQUE L'UTILISATEUR ARRETE DE HOVER */
+.gallery_transition {
+    text-transform: uppercase;
+    transition: 2s ease-out;
+    transition-property: opacity;
+    opacity: 0;
+    
 }
 
-@media screen and (max-width:1020px) {
+.gallery_image>article:hover .gallery_transition {
+    transition-timing-function: ease-in;
+    transition-property: background-color;
+    opacity: 1;
+    color: white;
+    
+}   
 
-    .gallery_texte_hero {
-        min-height: 20vh;
-    }
-
-    .gallery_texte_promotions {
-        max-height: 100px;
-    }
-
-    .gallery_texte {
-
-        padding: 5px;
-
-        border-radius: 15px;
-    }
-
-
+    
 }
 
 @media screen and (max-width:320px) {
@@ -179,4 +177,4 @@
         border-radius: 25px;
     }
 
-}
+} 

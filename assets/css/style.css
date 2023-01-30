@@ -1,14 +1,18 @@
+
+
 /* TOUS LES IMPORT DES AUTRES PAGES CSS */
 
-@import "style-cartes.css";
-@import "style-hero.css";
-@import "style-footer.css";
-@import "style-marquise.css";
 @import "style-font.css";
 @import "style-gallery.css";
-@import "style-navbar.css";
-@import "style-media.css";
-
+/*CREATION DES VARIABLES*/
+:root {
+    --color-ecru:rgb(239, 237, 232);
+    --color-orange: #F45D01;
+    --color-vert-fonce: rgb(79, 101, 81);
+    --color-vert-fonce-opacite: rgb(79, 101, 81, 0.8145);
+    --color-vert-clair: #98aca4;
+  }
+  
 /* ENLEVE LE MARGIN ET LE PADDING DE LA PAGE HTML PAR DEFAUT */
 * {
     padding: 0;
@@ -34,8 +38,10 @@ video {
 }
 
 body {
-    background-color: rgb(239, 237, 232);
+    background-color: var(--color-ecru);
 }
+
+
 
 article>img {
     max-height: 72vh;
@@ -54,15 +60,21 @@ hr {
     margin: auto;
     border-style: none;
     border-top-style: dotted;
-    border-color: #F45D01;
+    border-color: var(--color-orange);
     height: 0px;
     border-width: 25px;
     width: 12%;
 }
 
-@media screen and (max-width:1020px) {
+
+
+@media screen and (max-width:920px) {
     hr {
-        width: 20%;
+        display: none;
+    }
+    main {
+        padding-left: 30px;
+        padding-right: 30px;
     }
 
 }

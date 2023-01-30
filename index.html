@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <!-- Metadonnees du site, link vers le css, description, auteur -->
 <!-- POUR CHAQUE CLASSE, LE PREMIER MOT EST DIRECTEMENT LE FICHIER CSS STYLE-MOT DANS LEQUEL LA CLASSE SE TROUVE -->
@@ -9,8 +9,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Travaux pratique 2">
-    <meta name="author" content="Maryline Carrier et Rachel Crevoisier">
+    <meta name="description" content="Travaux pratique 3">
+    <meta name="author" content="Rachel Crevoisier">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Accueil</title>
 </head>
@@ -20,16 +20,18 @@
 <body>
 
     <!-- NAVBAR -->
+    <link rel="stylesheet" href="./assets/css/style-navbar.css">
+    <input class="nav-trigger" id="Menu" type="checkbox" aria-labelledby="Menu" >
     <nav class="navbar_menu">
         <ul class="navbar_couleur-bgn" role="menu">
 
             <!-- LOGO VEDGE A GAUCHE COMPLETEMENT DE LA NAVBAR -->
-            <li class="font_texte_logo navbar_text_centrer navbar_logo ">VEDGE</li>
+            <li class="navbar_text_centrer navbar_logo font_texte_logo">VEDGE</li>
 
             <!-- DROPDOWN 1 AVEC SYMBOLE DE FLECHE DANS LE A -->
             <li role="menuitem" aria-haspopup="true"><a href="#">À PROPOS &#9660;</a>
                 <ul role="menu" class="navbar_drop_down">
-                    <li role="menuitem" aria-haspopup="false"><a href="#">Philosophie</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="philosophie.html">Philosophie</a></li>
                     <li role="menuitem" aria-haspopup="false"><a href="#">Carrières</a></li>
                     <li role="menuitem" aria-haspopup="false"><a href="#">Franchises</a></li>
                     <li role="menuitem" aria-haspopup="false"><a href="#">Presse</a></li>
@@ -37,14 +39,14 @@
                     </li>
                 </ul>
             </li>
-            <li class="navbar_division" role="menuitem" aria-haspopup="false"><a href="#">Accueil</a></li>
+            <li class="navbar_division" role="menuitem" aria-haspopup="false"><a href="index.html">Accueil</a></li>
 
             <!-- DROPDOWN 2 AVEC SYMBOLE DE FLECHE DANS LE A -->
             <li role="menuitem" aria-haspopup="true"><a href="#">Restaurants &#9660;</a>
                 <ul role="menu" class="navbar_drop_down">
                     <li role="menuitem" aria-haspopup="false"><a href="#">Trois-Rivières</a></li>
                     <li role="menuitem" aria-haspopup="false"><a href="#">DrummondVille</a></li>
-                    <li role="menuitem" aria-haspopup="false"><a href="#">Val-Jalbert</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="restaurant-val-jalbert.html">Val-Jalbert</a></li>
                     <li role="menuitem" aria-haspopup="false"><a href="#">Dix30</a></li>
                     <li role="menuitem" aria-haspopup="false"><a class="navbar_dernier_dropdown" href="#">Berlin</a>
                     </li>
@@ -55,9 +57,9 @@
             <li role="menuitem" aria-haspopup="false"><a href="#">Commandez</a></li>
         </ul>
     </nav>
-
+    <link rel="stylesheet" href="css/style-gallery.css">
     <link rel="stylesheet" href="css/style-hero.css">
-
+    
     <main>
         <!-- SECTION AVEC LE HERO DE PAGE (AJOUT DE SCÉNARISATION) DANS LEQUEL IL Y AURAIT UN VIDEO AVEC DE LA NOURRITURE EXCELLENTE -->
         <!-- LE HERO PERMET À L'UTILISATEUR D'ETRE EMERVEILLÉ PAR LA QUALITÉ DE LA NOURRITURE ET DE LA VIDEO -->
@@ -73,20 +75,18 @@
 
         <!-- DIVISION DE PAGE -->
         <hr>
-
-
         <!-- GRILLE D'ENTETE DE PAGE AVEC LES PROMOTIONS -->
         <section class="gallery_image gallery_texte_promotions">
             <header class="gallery_image gallery_texte_promotions">
                 <article class="gallery_texte gallery_image_fix">
                     <!-- photo botanique-decadente prise sur https://www.instagram.com/p/Cmbx6NuMqOL/ -->
-                    <img src="./assets/images/botanique-decadente.png" alt="repas vegan coloré " />
+                    <img src="./assets/images/botanique-decadente.png" alt="repas vegan coloré ">
                     <div>
                         <h1 class="gallery_texte_emphase">BOTANIQUE ET DÉCADENTE</h1>
                     </div>
                 </article>
                 <article class="gallery_texte gallery_image_fix">
-                    <img src="./assets/images/mimosa_main.jpg" alt="femme tenant un joli verre de mimosa" />
+                    <img src="./assets/images/mimosa_main.jpg" alt="femme tenant un joli verre de mimosa">
                     <div>
                         <h1 class="gallery_texte_emphase">DEUX MIMOSAS POUR 15$</h1>
                     </div>
@@ -94,62 +94,62 @@
             </header>
         </section>
 
-        <!-- DIVISION DE PAGE -->
-        <hr>
-
+         <!-- DIVISION DE PAGE -->
+         <hr>
+         <link rel="stylesheet" href="./assets/css/style-cartes.css">
         <!-- CARTE AVEC BOUTON -->
         <section class="carte">
             <div>
                 <h2>Trouvez un restaurant près de chez vous.</h2>
 
-                <input aria-label="recherche_restaurant" type="text" id="fname" name="fname"><a class=" carte_bouton"
+                <input aria-label="recherche_restaurant" type="text" id="fname" name="fname" placeholder="Ville ou code postal"><a class=" carte_bouton"
                     href="#">OK</a>
             </div>
         </section>
 
-        <!-- DIVISION DE PAGE -->
-        <hr>
+         <!-- DIVISION DE PAGE -->
+         <hr>
 
         <!-- GRILLE AVEC TOUS LES RESTAURANTS EN HOVER (SUR LE VRAI SITE, LA PHOTO VA ETRE CLAIR ETT VA DEVENIR FLOU AVEC LE TEXTE DE L'ENDROIT QUI VA APPARAITRE) -->
         <header>
             <section class="gallery_image">
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto1.jpg" alt="" />
+                    <img src="./assets/images/restaurant-trois-rivieres.jpg" alt="Restaurant Trois-Rivières">
                     <h2 class="gallery_transition centered">Trois-Rivières</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto2.jpg" alt="" />
+                    <img src="./assets/images/restaurant-Drummondville.jpg" alt="Restaurant Drummondville">
                     <h2 class="gallery_transition centered">Drummondville</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto3.jpg" alt="" />
+                    <img src="./assets/images/restaurant-Val-Jalbert.jpg" alt="Restaurant Val-Jalbert">
                     <h2 class="gallery_transition centered">Val-Jalbert</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto4.jpg" alt="" />
+                    <img src="./assets/images/restaurant-Dix30.jpg" alt="Restaurant Dix30">
                     <h2 class="gallery_transition centered">Dix30</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto5.jpg" alt="" />
+                    <img src="./assets/images/restaurant-toronto.jpg" alt="Restaurant Toronto">
                     <h2 class="gallery_transition centered">Toronto</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto6.jpg" alt="" />
+                    <img src="./assets/images/restaurant-berlin.jpg" alt="Restaurant Berlin">
                     <h2 class="gallery_transition centered">Berlin</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto7.jpg" alt="" />
+                    <img src="./assets/images/restaurant-montreal.jpg" alt="Restaurant Montréal">
                     <h2 class="gallery_transition centered">Montréal</h2>
                 </article>
                 <article class="gallery_texte gallery_texte_villes">
-                    <img src="./assets/images/resto8.jpg" alt="" />
+                    <img src="./assets/images/restaurant-saint-sauveur.jpg" alt="Restaurant Saint Sauveur">
                     <h2 class="gallery_transition centered">St-Sauveur</h2>
                 </article>
             </section>
         </header>
 
-        <!-- DIVISION DE PAGE -->
-        <hr>
+         <!-- DIVISION DE PAGE -->
+         <hr>
 
         <!-- CARTE POUR DEVENIR PROPRIÉTAIRE D'UN RESTAURANT VEDGE -->
         <section class="carte">
@@ -160,25 +160,28 @@
                 <a class="carte_bouton" href="#">CONTACTEZ NOUS</a>
             </div>
         </section>
-
     </main>
 
     <!-- FOOTER DE LA PAGE AVEC SOUS MENU + HEURES + LOCALISATIONS -->
+    <link rel="stylesheet" href="./assets/css/style-footer.css">
     <footer>
         <div class="footer">
-
-            <div class="footer_1">
-                <h2 class="footer_marge">INFORMATIONS</h2>
+            <div class="footer_adresses">
+                <h2 class="footer_marge">NOS ADRESSES</h2>
                 <ul>
-                    <li><a href="#">Philosophie</a></li>
-                    <li><a href="#">Carrières</a></li>
-                    <li><a href="#">Franchise</a></li>
-                    <li><a href="#">Presse</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">1866 rue Veganisch, BD,DE</a></li>
+                    <li><a href="#">175 rue Salade, QC, CA</a></li>
+                    <li><a href="#">629 rue Green, ON, CA</a></li>
+                    <li><a href="#">707 rue de l'Aubergine, QC, CA</a></li>
+                    <li><a href="#">1777 rue de la Romaine, QC, CA</a></li>
+                    <li class="footer_media">
+                        <img src="assets/images/logo_facebook.png" alt="facebook">
+                        <img src="assets/images/logo_linkedin.png" alt="linkedin">
+                        <img src="assets/images/logo_twitter.png" alt="twitter">
+                    </li>
                 </ul>
-
             </div>
-            <div class="footer_2 footer_centrer">
+            <div class="footer_ouvertures footer_centrer">
                 <h2 class="footer_marge">HEURES D'OUVERTURE</h2>
                 <ul>
                     <li><a href="#">Lundi . 11:30–22:00</a></li>
@@ -191,26 +194,17 @@
                 </ul>
 
             </div>
-
-            <div class="footer_3">
-                <h2 class="footer_marge">NOS ADRESSES</h2>
-                <ul>
-                    <li><a href="#">1866 rue Veganisch, BD,DE</a></li>
-                    <li><a href="#">175 rue Salade, QC, CA</a></li>
-                    <li><a href="#">629 rue Green, ON, CA</a></li>
-                    <li><a href="#">707 rue de l'Aubergine, QC, CA</a></li>
-                    <li><a href="#">1777 rue de la Romaine, QC, CA</a></li>
-                </ul>
-                <div class="footer_media">
-                    <img src="https://img.icons8.com/fluency/48/null/facebook-new.png" alt="facebook" />
-                    <img src="https://img.icons8.com/color/48/null/instagram-new--v1.png" alt="instagram" />
-                </div>
-
+            <div class="footer_commande">
+                
+                <a class="footer_bouton" href="#">COMMANDEZ</a>
+                <a class="footer_bouton" href="#">RESERVEZ</a>
+                <a class="footer_bouton" href="#">NEWSLETTER</a>
             </div>
+            
 
         </div>
-        <div class="footer_right_copyrights">
-            <p>&#169 2022 Vedge</p>
+        <div class="footer_copyrights">
+            <h6>&#169; 2016-2023. Tous droits réservés.</h6>
         </div>
 
     </footer>

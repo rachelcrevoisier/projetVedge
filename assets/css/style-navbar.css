@@ -1,14 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
 .navbar_menu {
-    max-width: auto;
+    width: 100%;
+    z-index: 1;
 }
-
-/* BACKGROUND COLOR DE LA NAVBAR */
 .navbar_couleur-bgn {
-    background-color: rgb(79, 101, 81);
+    background-color: var(--color-vert-fonce);
 }
-
 /* PERMET DE METTRE UN ESPACE ENTRE À PROPOS ET ACCUEIL (PREND L'ESPACE RESTANT) */
 .navbar_division {
     margin-left: auto;
@@ -26,6 +24,7 @@
     display: flex;
     list-style: none;
     padding: 0;
+    gap: 10px;
 }
 
 /* MET LES ENFANTS DES ANCHOR TAGS COMME FLEX ET ALIGNE LES ELEMENT AU CENTRE //SPACE-AROUND AVEC 20PX DE PADDING , ENLEVE LES DECORATIONS DE TEXTE DES ANCHOR TAGS ET MET TOUT EN UPPERCASE */
@@ -52,7 +51,7 @@
 
 /* PERMET DE FAIRE FONCTIONNER LE CHANGEMENT DE COULEUR DE BKGROUND DE LA NAVBAR LORSQUE L'UTILISATEUR HOVER */
 .navbar_menu a:hover {
-    background-color: #98aca4;
+    background-color: var(--color-vert-clair);
     color: white;
     transition-duration: 0.4s;
 }
@@ -63,7 +62,8 @@
     position: absolute;
     display: flex;
     flex-flow: column;
-    width: 100%;
+    /* width: 100%; */
+    background-color: var(--color-vert-fonce);
 }
 
 .navbar_drop_down a {
@@ -83,11 +83,11 @@
 
 /* CHANGE LE FOND DE LA DROPDOWN */
 .navbar_drop_down a {
-    background-color: rgb(79, 101, 81, 0.8145);
+    background-color: var(--color-vert-fonce-opacite);
 }
 
-/* RESPONSIVENESS DE LA NAVBAR A 720PX */
-@media screen and (max-width: 720px) {
+/* RESPONSIVENESS DE LA NAVBAR A 920PX */
+@media screen and (max-width: 920px) {
 
     /* ENLEVE LE MARGIN-LEFT A GAUCHE DE À PROPOS */
     .navbar_division {
@@ -119,7 +119,7 @@
         padding: 0;
     }
 
-    /* MET LE FONT SIZE A 1.5REM EN 720PX */
+    /* MET LE FONT SIZE A 1.5REM EN 940PX */
     nav a {
         font-size: 1.5rem;
     }
@@ -127,4 +127,62 @@
     nav div {
         font-size: 1.5rem;
     }
+    .nav-trigger {
+		appearance: none;
+		position: sticky;
+		top: 10px;
+		right: 10px;
+		z-index: 2;
+		background-color: var(--color-vert-fonce);
+		padding: 5px;
+		border-radius: 2px;
+	}
+
+	.nav-trigger:not(:checked)~nav {
+		opacity: 0;
+		pointer-events: none;
+	}
+
+	.nav-trigger::after {
+		content: "Menu";
+	}
+
+	.nav-trigger:checked::after {
+		content: "Fermer";
+	}
+
+
+
+/* styles de navigation */
+
+	.navbar_menu {
+		position: fixed;
+		inset: 0;
+		overflow: auto;
+
+		display: flex;
+
+		
+		background-color: var(--color-vert-fonce);
+
+		font-size: 40px;
+		text-align: center;
+	}
+
+
+/* Rétablir les styles de liste */
+	.navbar_menu ul {
+		margin: auto;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+}
+@media screen and (min-width: 920px) {
+    .nav-trigger {
+		display: none;
+	}
+
+	
+
 }

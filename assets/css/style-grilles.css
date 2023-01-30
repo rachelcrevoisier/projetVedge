@@ -1,0 +1,91 @@
+.grille-deux-par-deux {
+	display: flex;
+	align-items: center;
+	gap: 120px;
+    
+}
+
+.grille-deux-par-deux>* {
+	flex-basis: 50%;
+    
+    
+}
+.grille-deux-par-deux>img {
+	
+    border-radius:25px;
+    object-fit: cover;
+    height: 400px;
+    max-width: 100%;
+}
+.conteneur h3, p{
+	color:black;
+    
+}
+
+
+[id="grilles-commentaires"] {
+	--colonne: 200px;
+	--gouttiere: 20px;
+}
+
+
+/* carte.css */
+.grille-commentaires {
+	padding: 10px;
+	background-color: var(--color-vert-clair);
+	border-radius: 15px;
+    color:white;
+
+}
+
+/* grille.css / utilitaires.css */
+.grille-commentaires-cartes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(var(--colonne), 1fr));
+	gap: var(--gouttiere);
+}
+
+
+.grille-menu {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 30px;
+}
+.grilles-menus img{
+    border-radius:25px;
+    max-width: 100%;
+
+}
+
+
+
+@media screen and (max-width:920px) {
+    .grille-deux-par-deux {
+
+        gap: 50px;
+        
+    }
+    
+}
+@media screen and (max-width:620px) {
+    .grille-deux-par-deux {
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+    .conteneur h3{
+        font-size:20px;
+        
+    }
+    .conteneur  p{
+        font-size:15px;
+        
+    }
+    .grille-deux-par-deux>img {
+	
+        border-radius:25px;
+        object-fit: cover;
+        max-height: 200px;
+        width: 100%;
+    }
+}

@@ -1,3 +1,21 @@
+TP3 - Rachel Crevoisier
+Ok - Mise en place des variables dans le css
+Ok - On passe le media query du menu à 920 à la place de 720 pour que les fleches restent sur la même ligne
+Ok - Suppression des boules oranges dans la version mobile qui étaient utilisées pour séparer les blocs. Ca n'apporte rien. Mise en place d'un interligne plus élevé
+Ok - Mise en place du menu adaptatif
+Ok - Diminution des padding pour les visuels à partir de 920
+Ok - Inscription des villes sur les cartes en version mobile
+Ok - Mise en ligne des css dans les pages aux endroits où on les appelle
+Ok - Footer : renommer les footer 1, 2 et 3
+Ok - Renommage des visuels des restaurants
+Ok - Mise en place des alt sur les visuels des restaurants
+Ok - Suppression des visuels inutilisés
+Ok - Suppression du A propros dans le footer car déjà dans le menu en haut
+Ok - Ajout boutons : commandez, réservez et newsletter à la place du A propos
+- Validation wave et w3C avant ajout de pages
+
+
+
 Tp2 
 Maryline Carrier 
 Rachel Crevoisier
