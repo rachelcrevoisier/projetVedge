@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+<!-- POUR CHAQUE CLASSE, LE PREMIER MOT EST DIRECTEMENT LE FICHIER CSS STYLE-MOT DANS LEQUEL LA CLASSE SE TROUVE -->
+<!-- LORSQUE OMIS, J'UTILISE LE FICHIER STYLE.CSS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travaux pratique 3">
+    <meta name="author" content="Rachel Crevoisier">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Accueil</title>
+</head>
+
+<!-- BODY DU SITE -->
+
+<body>
+
+    <!-- NAVBAR -->
+    <link rel="stylesheet" href="./assets/css/style-navbar.css">
+    <input class="nav-trigger" id="Menu" type="checkbox" aria-labelledby="Menu" >
+    <nav class="navbar_menu">
+        <ul class="navbar_couleur-bgn" role="menu">
+
+            <!-- LOGO VEDGE A GAUCHE COMPLETEMENT DE LA NAVBAR -->
+            <li class="font_texte_logo navbar_text_centrer navbar_logo ">VEDGE</li>
+
+            <!-- DROPDOWN 1 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">À PROPOS &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="philosophie.html">Philosophie</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Carrières</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Franchises</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Presse</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a class="navbar_dernier_dropdown" href="#">Contact</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar_division" role="menuitem" aria-haspopup="false"><a href="index.html">Accueil</a></li>
+
+            <!-- DROPDOWN 2 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">Restaurants &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Trois-Rivières</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">DrummondVille</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="restaurant-val-jalbert.html">Val-Jalbert</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Dix30</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a class="navbar_dernier_dropdown" href="#">Berlin</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Trouvez moi</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Réservez</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Commandez</a></li>
+        </ul>
+    </nav>
+    <link rel="stylesheet" href="css/style-gallery.css">
+    <link rel="stylesheet" href="css/style-hero.css">
+    
+    <main>
+        <!-- SECTION AVEC LE HERO DE PAGE (AJOUT DE SCÉNARISATION) DANS LEQUEL IL Y AURAIT UN VIDEO AVEC DE LA NOURRITURE EXCELLENTE -->
+        <!-- LE HERO PERMET À L'UTILISATEUR D'ETRE EMERVEILLÉ PAR LA QUALITÉ DE LA NOURRITURE ET DE LA VIDEO -->
+        
+        <!-- GRILLE D'ENTETE DE PAGE AVEC LES PROMOTIONS -->
+        <section class="gallery_image gallery_texte_promotions">
+            <header class="gallery_image gallery_texte_promotions">
+                <article class="gallery_texte gallery_image_fix">
+                    <!-- photo botanique-decadente prise sur https://www.instagram.com/p/Cmbx6NuMqOL/ -->
+                    <img src="./assets/images/botanique-decadente.png" alt="repas vegan coloré ">
+                    <div class="gallery_texte_emphase">
+                        <h1 >BOTANIQUE ET DÉCADENTE</h1>
+                        <h5>Le concept de « Vedge » s’inscrit dans la vision de l’alimentation. Il reflète notre volonté de ralentir la cadence, d’offrir des plats sains à une clientèle soucieuse de son bien-être et de l’environnement. Une clientèle hédoniste qui mange avec plaisir et de façon responsable.</h5>
+                    </div>
+                </article>
+            </header>
+        </section>
+
+         <!-- DIVISION DE PAGE -->
+         <hr>
+         <link rel="stylesheet" href="./assets/css/style-cartes.css">
+         <section class="carte">
+            <div>
+                
+                <h4>Nous nous approvisionnons auprès d’artisans locaux, car nous estimons qu’une bonne cuisine dépend de la qualité de ses ingrédients. Moins nos ingrédients voyagent, plus nous pouvons offrir à nos clients des plats qui se distinguent par leur fraîcheur, leur authenticité et leur qualité. Le tout, en réduisant notre empreinte écologique et nos émissions de gaz carbonique.
+                </h4>
+                
+            </div>
+        </section>
+        
+
+         <!-- DIVISION DE PAGE -->
+         <hr>
+         <link rel="stylesheet" href="./assets/css/style-grilles.css">
+        
+         <div class="grille-deux-par-deux">
+             
+                 <img src="./assets/images/cuisine-artisanale.jpg" alt="Restaurant Val-Jalbert">
+                 
+             <div class="conteneur">
+                 <h3>Cuisine artisanale</h3><br>
+                 <p>
+                    Nous connaissons chaque ingrédient qui entre dans la composition de nos recettes. Nous créons la plupart de nos recettes à partir de rien — rien que des ingrédients naturels, frais et savoureux. Voilà qui fait la vraie beauté de notre cuisine!
+                 </p>
+             </div>
+         </div>
+         <!-- DIVISION DE PAGE -->
+         <hr>
+        <!-- GRILLE AVEC TOUS LES RESTAURANTS EN HOVER (SUR LE VRAI SITE, LA PHOTO VA ETRE CLAIR ETT VA DEVENIR FLOU AVEC LE TEXTE DE L'ENDROIT QUI VA APPARAITRE) -->
+        <header>
+            <section class="gallery_image">
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-trois-rivieres.jpg" alt="Restaurant Trois-Rivières">
+                    <h2 class="gallery_transition centered">Trois-Rivières</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-Drummondville.jpg" alt="Restaurant Drummondville">
+                    <h2 class="gallery_transition centered">Drummondville</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-Val-Jalbert.jpg" alt="Restaurant Val-Jalbert">
+                    <h2 class="gallery_transition centered">Val-Jalbert</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-Dix30.jpg" alt="Restaurant Dix30">
+                    <h2 class="gallery_transition centered">Dix30</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-toronto.jpg" alt="Restaurant Toronto">
+                    <h2 class="gallery_transition centered">Toronto</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-berlin.jpg" alt="Restaurant Berlin">
+                    <h2 class="gallery_transition centered">Berlin</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-montreal.jpg" alt="Restaurant Montréal">
+                    <h2 class="gallery_transition centered">Montréal</h2>
+                </article>
+                <article class="gallery_texte gallery_texte_villes">
+                    <img src="./assets/images/restaurant-saint-sauveur.jpg" alt="Restaurant Saint Sauveur">
+                    <h2 class="gallery_transition centered">St-Sauveur</h2>
+                </article>
+            </section>
+        </header>
+
+         
+        <!-- DIVISION DE PAGE -->
+        <hr>
+        <div class="grille-deux-par-deux">
+            <img src="./assets/images/fournisseurs-locaux.jpg" alt="Restaurant Val-Jalbert">
+            <div class="conteneur">
+                <h3>Fournisseurs locaux</h3><br>
+                <p>
+                    Nous nous approvisionnons auprès d’artisans locaux, car nous estimons qu’une bonne cuisine dépend de la qualité de ses ingrédients. Moins nos ingrédients voyagent, plus nous pouvons offrir à nos clients des plats qui se distinguent par leur fraîcheur, leur authenticité et leur qualité. Le tout, en réduisant notre empreinte écologique et nos émissions de gaz carbonique.
+                 </p>
+             </div>
+        </div>
+         <!-- DIVISION DE PAGE -->
+         <hr>
+        <!-- CARTE POUR DEVENIR PROPRIÉTAIRE D'UN RESTAURANT VEDGE -->
+        <section class="carte">
+            <div>
+                <h2>Envie d'avoir votre propre restaurant?</h2>
+                <h4>LAISSEZ-NOUS VOUS CONVAINCRE DE DÉVELOPPER VOTRE PROPRE FRANCHISE VEDGE!
+                </h4>
+                <a class="carte_bouton" href="#">CONTACTEZ NOUS</a>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- FOOTER DE LA PAGE AVEC SOUS MENU + HEURES + LOCALISATIONS -->
+    <link rel="stylesheet" href="./assets/css/style-footer.css">
+    <footer>
+        <div class="footer">
+            <div class="footer_adresses">
+                <h2 class="footer_marge">NOS ADRESSES</h2>
+                <ul>
+                    <li><a href="#">1866 rue Veganisch, BD,DE</a></li>
+                    <li><a href="#">175 rue Salade, QC, CA</a></li>
+                    <li><a href="#">629 rue Green, ON, CA</a></li>
+                    <li><a href="#">707 rue de l'Aubergine, QC, CA</a></li>
+                    <li><a href="#">1777 rue de la Romaine, QC, CA</a></li>
+                    <li class="footer_media">
+                        <img src="assets/images/logo_facebook.png" alt="facebook">
+                        <img src="assets/images/logo_linkedin.png" alt="linkedin">
+                        <img src="assets/images/logo_twitter.png" alt="twitter">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_ouvertures footer_centrer">
+                <h2 class="footer_marge">HEURES D'OUVERTURE</h2>
+                <ul>
+                    <li><a href="#">Lundi . 11:30–22:00</a></li>
+                    <li><a href="#">Mardi . 11:30–22:00</a></li>
+                    <li><a href="#">Mercredi . 11:30–22:00</a></li>
+                    <li><a href="#">Jeudi . 11:30–23:00</a></li>
+                    <li><a href="#">Vendredi . 11:30–23:00</a></li>
+                    <li><a href="#">Samedi . 10:00–23:00</a></li>
+                    <li><a href="#">Dimanche . 10:00–22:00</a></li>
+                </ul>
+
+            </div>
+            <div class="footer_commande">
+                
+                <a class="footer_bouton" href="#">COMMANDEZ</a>
+                <a class="footer_bouton" href="#">RESERVEZ</a>
+                <a class="footer_bouton" href="#">NEWSLETTER</a>
+            </div>
+            
+
+        </div>
+        <div class="footer_copyrights">
+            <h6>&#169; 2016-2023. Tous droits réservés.</h6>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

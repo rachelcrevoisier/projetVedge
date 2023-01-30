@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Metadonnees du site, link vers le css, description, auteur -->
+<!-- POUR CHAQUE CLASSE, LE PREMIER MOT EST DIRECTEMENT LE FICHIER CSS STYLE-MOT DANS LEQUEL LA CLASSE SE TROUVE -->
+<!-- LORSQUE OMIS, J'UTILISE LE FICHIER STYLE.CSS -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travaux pratique 3">
+    <meta name="author" content="Rachel Crevoisier">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Accueil</title>
+</head>
+
+<!-- BODY DU SITE -->
+
+<body>
+
+    <!-- NAVBAR -->
+    <link rel="stylesheet" href="./assets/css/style-navbar.css">
+    <input class="nav-trigger" id="Menu" type="checkbox" aria-labelledby="Menu" >
+    <nav class="navbar_menu">
+        <ul class="navbar_couleur-bgn" role="menu">
+
+            <!-- LOGO VEDGE A GAUCHE COMPLETEMENT DE LA NAVBAR -->
+            <li class="navbar_text_centrer navbar_logo font_texte_logo">VEDGE</li>
+
+            <!-- DROPDOWN 1 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">À PROPOS &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="philosophie.html">Philosophie</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Carrières</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Franchises</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Presse</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a class="navbar_dernier_dropdown" href="#">Contact</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="navbar_division" role="menuitem" aria-haspopup="false"><a href="index.html">Accueil</a></li>
+
+            <!-- DROPDOWN 2 AVEC SYMBOLE DE FLECHE DANS LE A -->
+            <li role="menuitem" aria-haspopup="true"><a href="#">Restaurants &#9660;</a>
+                <ul role="menu" class="navbar_drop_down">
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Trois-Rivières</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">DrummondVille</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Val-Jalbert</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a href="#">Dix30</a></li>
+                    <li role="menuitem" aria-haspopup="false"><a class="navbar_dernier_dropdown" href="#">Berlin</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Trouvez moi</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Réservez</a></li>
+            <li role="menuitem" aria-haspopup="false"><a href="#">Commandez</a></li>
+        </ul>
+    </nav>
+    <!-- <link rel="stylesheet" href="css/style-gallery.css">
+    <link rel="stylesheet" href="css/style-hero.css"> -->
+    
+    <main>
+        <link rel="stylesheet" href="./assets/css/style-grilles.css">
+        
+        <div class="grille-deux-par-deux">
+            
+                <img src="./assets/images/restaurant-Val-Jalbert-haut.jpg" alt="Restaurant Val-Jalbert">
+                
+            <div class="conteneur">
+                <h3>Venir nous voir</h3>
+                <p>
+                    Vedge | Val-Jalbert<br>
+                    500 rue de la Montagne<br>
+                    Ouvrir sur Google Maps
+                </p><br>
+                <h3>Ouvertures</h3>
+                <p>
+                    Lundi, mardi, mercredi : 11:30–22:00<br>
+                    Jeudi et vendredi : 11:30–23:00<br>
+                    Samedi et dimanche : 10:00–22:00
+                </p>
+            </div>
+        </div>
+        <!-- DIVISION DE PAGE -->
+        <hr>
+        <section id="grilles-commentaires">
+           
+            <div class="grille-commentaires-cartes">
+                <article class="grille-commentaires">
+                    <h4>Absolument délicieux. </h4>
+                    <p>
+                        Je ne suis pas végétalienne et c’était de loin l’un des meilleurs repas que j’ai pris à Val-Jalbert. 
+                        
+                    </p>
+                </article>
+                <article class="grille-commentaires">
+                    <h4>Leur hamburger...</h4>
+                    <p>
+                        Prenez le « hamburger » de la maison avec des frites de patates douces ou le « fromage grillé ».
+                        
+                    </p>
+                </article>
+                <article class="grille-commentaires">
+                    <h4>Tout est magnifique</h4>
+                    <p>
+                        Nous étions là pour un déjeuner tardif un lundi et le service était amical et rapide. L’intérieur est également magnifique.
+                        
+                    </p>
+                </article>
+                <article class="grille-commentaires">
+                    <h4>Tout était excellent !</h4>
+                    <p>
+                     Belle expérience culinaire !
+                        
+                    </p>
+                </article>
+                <article class="grille-commentaires">
+                    <h4>Nous étions un groupe de 24...</h4>
+                    <p>
+                     Nous avons eu un super service, Élise notre serveuse a été organisée, efficace et tellement sympa. Pour la nourriture, c'est la même chose. Merci
+                        
+                    </p>
+                </article>
+                <article class="grille-commentaires">
+                    <h4>Service attentionné</h4>
+                    <p>
+                     Décor agréable pour un repas délicieux.
+                        
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- DIVISION DE PAGE -->
+        <hr>
+        <link rel="stylesheet" href="./assets/css/style-gallery.css">
+        <section class="gallery_image gallery_texte_promotions">
+            <header class="gallery_image gallery_texte_promotions">
+                <article class="gallery_texte gallery_image_fix">
+                    <img src="./assets/images/mimosa_main.jpg" alt="femme tenant un joli verre de mimosa">
+                    <div>
+                        <h1 class="gallery_texte_emphase">Profitez de nos promotions
+                         : DEUX MIMOSAS POUR 15$</h1>
+                    </div>
+                </article>
+            </header>
+        </section>
+        <!-- DIVISION DE PAGE -->
+        <hr>
+        <section>
+			<div class="grille-menu">
+				<article class="grilles-menus">
+					<img src="assets/images/menu-midi-soir.jpg" alt="Menu midi et soir">
+					<h4>Du lundi au vendredi, samedi et dimanche soir</h4>
+					<div>
+						<a class="carte_bouton" href="#">Menu jour et soir</a>
+					</div>
+					
+				</article>
+				<article class="grilles-menus">
+					<img src="assets/images/menu-brunch.jpg" alt="Menu brunch">
+					<h4>Samedi et dimanche de 10 h à 15 h</h4>
+					<div>
+						<a class="carte_bouton" href="#">Menu brunch</a>
+					</div>
+					
+				</article>
+				<article class="grilles-menus">
+					<img src="assets/images/menu-boisson.jpg" alt="Menu boissons">
+					<h4>Vins natures et biologiques, bières et cocktails</h4>
+					<div>
+						<a class="carte_bouton" href="#">Menu boissons</a>
+					</div>
+					
+					
+				</article>
+                <article class="grilles-menus">
+					<img src="assets/images/menu-a-emporter.jpg" alt="Menu à emporter">
+					<h4>Une sélection de plats pour le bureau ou la maison</h4>
+					<div>
+						<a class="carte_bouton" href="#">Menu pour emporter</a>
+					</div>
+					
+				</article>
+			</div>
+		</section>
+        <!-- DIVISION DE PAGE -->
+        <hr>
+        <div class="grille-deux-par-deux">
+            
+            <img src="./assets/images/restaurant-Val-Jalbert.jpg" alt="Restaurant Val-Jalbert">
+            
+        <div class="conteneur">
+            <h3>Réserver pour un groupe</h3>
+            <p>
+                « Vedge » Val-Jalbert peut accueillir des groupes jusqu’à 24 personnes.<p>
+<h4>Menu</h4>
+<p>
+Les groupes de 20 à 24 personnes ont accès à une carte de groupe qui réunit l’ensemble de nos meilleurs vendeurs. Chaque personne à votre table sélectionnera au minimum une entrée et un plat.<br>
+<a class="carte_bouton" href="#">Voir le menu de groupe</a>
+
+            </p>
+        </div>
+    </div>
+    <!-- DIVISION DE PAGE -->
+    <hr>
+        <link rel="stylesheet" href="./assets/css/style-cartes.css">
+        <section class="carte">
+            <div>
+                <h2>Réservez votre table</h2>
+                <h4>Toutes les réservations doivent être faites via notre site web.
+                </h4>
+                <a class="carte_bouton" href="#">RESERVEZ MAINTENANT</a>
+            </div>
+        </section>
+        
+        
+    </main>
+
+    <!-- FOOTER DE LA PAGE AVEC SOUS MENU + HEURES + LOCALISATIONS -->
+    <link rel="stylesheet" href="./assets/css/style-footer.css">
+    <footer>
+        <div class="footer">
+            <div class="footer_adresses">
+                <h2 class="footer_marge">NOS ADRESSES</h2>
+                <ul>
+                    <li><a href="#">1866 rue Veganisch, BD,DE</a></li>
+                    <li><a href="#">175 rue Salade, QC, CA</a></li>
+                    <li><a href="#">629 rue Green, ON, CA</a></li>
+                    <li><a href="#">707 rue de l'Aubergine, QC, CA</a></li>
+                    <li><a href="#">1777 rue de la Romaine, QC, CA</a></li>
+                    <li class="footer_media">
+                        <img src="assets/images/logo_facebook.png" alt="facebook">
+                        <img src="assets/images/logo_linkedin.png" alt="linkedin">
+                        <img src="assets/images/logo_twitter.png" alt="twitter">
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_ouvertures footer_centrer">
+                <h2 class="footer_marge">HEURES D'OUVERTURE</h2>
+                <ul>
+                    <li><a href="#">Lundi . 11:30–22:00</a></li>
+                    <li><a href="#">Mardi . 11:30–22:00</a></li>
+                    <li><a href="#">Mercredi . 11:30–22:00</a></li>
+                    <li><a href="#">Jeudi . 11:30–23:00</a></li>
+                    <li><a href="#">Vendredi . 11:30–23:00</a></li>
+                    <li><a href="#">Samedi . 10:00–23:00</a></li>
+                    <li><a href="#">Dimanche . 10:00–22:00</a></li>
+                </ul>
+
+            </div>
+            <div class="footer_commande">
+                
+                <a class="footer_bouton" href="#">COMMANDEZ</a>
+                <a class="footer_bouton" href="#">RESERVEZ</a>
+                <a class="footer_bouton" href="#">NEWSLETTER</a>
+            </div>
+            
+
+        </div>
+        <div class="footer_copyrights">
+            <h6>&#169; 2016-2023. Tous droits réservés.</h6>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
