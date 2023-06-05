@@ -1,12 +1,9 @@
 Travail pratique #03 — Optimiser et décliner une maquette HTML+CSS
 
 Instructions :
-
 Plusieurs projets vous sont proposés.
 Consultez les maquettes et leur code ainsi que le prototype initial.
-
 Choisissez un projet qui vous plaise (code & esthétique).
-
 Analysez le code existant puis optimisez-le.
 
 Évaluez la maquette et ses adaptations puis optimisez-la.
