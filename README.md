@@ -20,4 +20,4 @@ Organisez et commentez votre code CSS.
 
 Argumentez vos décisions, optimisations et modifications les plus importantes dans un fichier « argumentaire.txt ».
 
-Lien pour voir le projet : <https://rachelcrevoisier.github.io/projetVedge/>
+Lien pour voir le projet : <a href="https://rachelcrevoisier.github.io/projetVedge/" target="_blank"><https://rachelcrevoisier.github.io/projetVedge/></a>
