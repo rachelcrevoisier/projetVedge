@@ -1,4 +1,6 @@
-#Travail pratique #03
+
+# Travail pratique 03
+
 Optimiser et décliner une maquette HTML+CSS
 
 Instructions :
